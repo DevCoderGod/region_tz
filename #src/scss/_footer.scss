@@ -1,0 +1,19 @@
+.footer {
+	font-size: 12px;
+	line-height: 12px;
+	color: #8571d2;
+	@include adapt-val("margin-top",40,8,$maxWidth,1);
+	@include adapt-val("margin-bottom",25,5,$maxWidth,1);
+	.links{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		white-space: nowrap;
+		:not(:last-child){
+			border-right: 1px solid #8571d2;
+		}
+		&__item {
+			padding: 0 11px;
+		}
+	}
+}

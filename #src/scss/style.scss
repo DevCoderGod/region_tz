@@ -1,0 +1,97 @@
+//--<МИКСИНЫ-----------------------------------------
+@import "_mixins";
+//-</МИКСИНЫ-----------------------------------------
+
+//--<ШРИФТЫ------------------------------------------
+@import "_fonts";
+//-</ШРИФТЫ
+
+//--<ЦВЕТА-------------------------------------------
+$text: white;
+//--</ЦВЕТА
+
+//--<ПЕРЕМЕННЫЕ--------------------------------------
+:root{
+	--var1: any;
+}
+$minWidth:320;
+$maxWidth:1366;
+$WidthContainer:837;//1110+15+15
+// 
+$md1:1023px;//1024
+$md2:992px;//
+$md3:799px;//800
+$md4:767px;//768   
+$md5:479px;//480   
+$md6:374px;//375   iPhon X
+$md7:320px;
+$md8:425px;
+//-</ПЕРЕМЕННЫЕ
+
+//--<ОБНУЛЕНИЕ СТИЛЕЙ--------------------------------
+	@import "_style_0";
+//-</ОБНУЛЕНИЕ СТИЛЕЙ--------------------------------
+
+body{
+	font-family: OpenSans;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	color: $text;
+//
+	background-color: #312376;
+	&._lock{
+		overflow: hidden;
+	}
+}
+//-</ОБНУЛЕНИЕ СТИЛЕЙ
+
+//--<ОБОЛОЧКА----------------------------------------
+.wrapper{
+	width: 100%;
+	max-width: $maxWidth;
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	background-image: url(../img/fon.svg);
+}
+.container{
+	max-width: $WidthContainer+px;
+	margin: 0 auto;
+	@include adapt-val("padding-left",42,5,$maxWidth,1);
+	@include adapt-val("padding-right",42,5,$maxWidth,1);
+	//border: solid 1px #000;
+	// border-left: solid 1px #000;
+	// border-right: solid 1px #000;
+}
+//-</ОБОЛОЧКА----------------------------------------
+//---
+@import "_nav";
+@import "_header";
+@import "_main";
+
+@import "_footer";
+
+
+// @media only screen and(max-width: 1920px){ /* CSS правила */ } 
+// @media only screen and(max-width: 1680px){}
+// @media only screen and(max-width: 1440px){}//смарт portrait
+// @media only screen and(max-width: 1366px){}
+// @media only screen and(max-width: 1280px){}
+// @media only screen and(max-width: 1024px){}
+// @media only screen and(max-width: 1080px){}//смарт portrait
+// @media only screen and(max-width: 800px){}
+// @media only screen and(max-width: 768px){}
+// @media only screen and(max-width: 720px){}//смарт portrait
+// @media only screen and(max-width: 600px){}
+// @media only screen and(max-width: 533px){}
+// @media only screen and(max-width: 360px){}
+// @media only screen and(max-width: 320px){}
+// @media only screen and(max-width: 240px){}
+// @media only screen and(max-width: 176px){}
+// 	@media all and (orientation: landscape)
+// 	{ /* CSS правила для устройства в альбомном режиме */ } 
+// 	@media all and (orientation: portrait)
+// 	{ /* CSS правила для устройства в портретном режиме */ }

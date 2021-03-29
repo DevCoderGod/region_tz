@@ -1,0 +1,26 @@
+.header {
+	margin: 0 auto 6px;
+	&__logo {
+		margin: 0 auto;
+		@include adapt-val("margin-top",30,5,$maxWidth,1);
+		@include adapt-val("margin-bottom",30,5,$maxWidth,1);
+	}
+	&__title{
+		max-width: 837px;
+		padding: 0 10px;
+		font-weight: 600;
+		text-align: center;
+		@include adapt-val("font-size",30,16,$maxWidth,1);
+		@include adapt-val("line-height",41,22,$maxWidth,1);
+	}
+}
+.logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&__text {
+		font-size: 25px;
+		font-weight: bold;
+	}
+}
