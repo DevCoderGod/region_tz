@@ -153,10 +153,6 @@ body._lock {
   padding-right: 42px;
 }
 
-.nav__item a {
-  cursor: pointer;
-}
-
 .header {
   margin: 0 auto 6px;
 }
