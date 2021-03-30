@@ -115,7 +115,6 @@ h1{
 		max-height: 344px;
 		height: 0;
 		@include adapt-val("padding-top",344,150,767,1);
-		// padding-top: 344px;
 	}
 
 	&__side{
@@ -252,22 +251,24 @@ h1{
 .prediction {
 	background-color: #492c9f;
 	border-radius: 20px;
-	// display: flex;
-	padding: 40px;
+	padding-top: 40px;
 	&__cards {
-		flex: 0 0 220px;
-		width: 220px;
+		flex: 0 0 260px;
+		width: 260px;
 		display: flex;
 		float: left;
 		max-height: 210px;
 		height: 210px;
 		margin: 0 40px 40px 0;
+		padding-left: 40px;
 		@media only screen and(max-width: $md4){
 			float: none;
 			max-height: 510px;
 			width: 100%;
 			height: 100%;
 			justify-content: space-between;
+			padding-right: 40px;
+			margin-bottom: 0;
 		}
 		:nth-child(2){
 			align-self: center;
@@ -289,6 +290,11 @@ h1{
 	}
 
 	&__text {
+		padding: 20px 40px;
+		@media only screen and(max-width: $md4){
+			@include adapt-val("padding-left",40,10,767,1);
+			@include adapt-val("padding-right",40,10,767,1);
+		}	
 		p{
 			padding-bottom: 10px;
 		}
@@ -319,7 +325,6 @@ h1{
 		}
 	}
 }
-
 
 .ad {
 	margin: 0 auto;
@@ -411,5 +416,4 @@ h1{
 
 .hidden{
 	display: none;
-	//margin: 0;
 }
