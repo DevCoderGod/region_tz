@@ -34,8 +34,6 @@ document.addEventListener("DOMContentLoaded",() =>{
 
 })
 
-
-
 function go() {
 	let progress=document.querySelector('.progress')
 	let start = new Promise(res=>setTimeout(() => res(), 2000))
@@ -80,12 +78,13 @@ function showForm() {
 async function formSubmit(e) {
 	e.preventDefault();
 	let form=document.querySelector('#form')
-	if(formValidate()) showResult(await sendData())
+	if(formValidate()) showResult(sendData())
 
 	async function sendData(){
 		let formData= new FormData(form)
 		formData.append('ids', cardsData.map(i=>i.id))
 		let res=await fetch('/',{method: 'POST', body: formData})
+		console.log(res);
 		return res
 	}
 
@@ -110,8 +109,10 @@ async function formSubmit(e) {
 function showResult(respons){
 	if(respons.ok){
 		let cards=JSON.parse(respons)
+		console.log('respons.ok');
 	}
 	else{
+		console.log('!respons.!!!ok');
 		document.querySelector('#form').classList.add('hidden')
 		document.querySelector('.advertisement2').classList.add('hidden')
 		let cards=document.querySelector('.prediction').querySelectorAll(".card")
