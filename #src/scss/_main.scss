@@ -301,11 +301,11 @@ h1{
 	}
 	.card {
 		flex: 0 0 77px;
+		cursor: auto;
 		@media only screen and(max-width: $md4){
 			flex: 0 0 32%;
 		}
 		&__size {
-			perspective: 0;
 			width: 100%;
 			max-height: 118px;
 			height: 0;

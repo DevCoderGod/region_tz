@@ -198,8 +198,8 @@ function cb() {}
 //--------------------------------------------------
 function WatchFiles(params) {
 	gulp.watch([path.watch.html],HTML)
-//	gulp.watch([path.watch.css],CSS)
-	gulp.watch([path.watch.css],CSS_Dev)
+	gulp.watch([path.watch.css],CSS)
+	// gulp.watch([path.watch.css],CSS_Dev)
 	gulp.watch([path.watch.js],JS)
 	gulp.watch([path.watch.img],IMAGES)
 }

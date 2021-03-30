@@ -132,7 +132,7 @@ body._lock {
 
 .wrapper {
   width: 100%;
-  max-width: 1366;
+  max-width: 1440px;
   min-height: 100%;
   overflow: hidden;
   display: -webkit-box;
@@ -595,11 +595,10 @@ h1 {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 77px;
           flex: 0 0 77px;
+  cursor: auto;
 }
 
 .prediction .card__size {
-  -webkit-perspective: 0;
-          perspective: 0;
   width: 100%;
   max-height: 118px;
   height: 0;
@@ -742,117 +741,117 @@ h1 {
   padding: 0 11px;
 }
 
-@media (max-width: 1366px) {
+@media (max-width: 1440px) {
   .container {
-    padding-left: calc(5px + 37 * ((100vw - 320px) / 1046));
+    padding-left: calc(5px + 37 * ((100vw - 320px) / 1120));
   }
 
   .container {
-    padding-right: calc(5px + 37 * ((100vw - 320px) / 1046));
+    padding-right: calc(5px + 37 * ((100vw - 320px) / 1120));
   }
 
   .header__logo {
-    margin-top: calc(5px + 25 * ((100vw - 320px) / 1046));
+    margin-top: calc(5px + 25 * ((100vw - 320px) / 1120));
   }
 
   .header__logo {
-    margin-bottom: calc(5px + 25 * ((100vw - 320px) / 1046));
+    margin-bottom: calc(5px + 25 * ((100vw - 320px) / 1120));
   }
 
   .header__title {
-    font-size: calc(16px + 14 * ((100vw - 320px) / 1046));
+    font-size: calc(16px + 14 * ((100vw - 320px) / 1120));
   }
 
   .header__title {
-    line-height: calc(22px + 19 * ((100vw - 320px) / 1046));
+    line-height: calc(22px + 19 * ((100vw - 320px) / 1120));
   }
 
   .card-progress__title {
-    font-size: calc(10px + 14 * ((100vw - 320px) / 1046));
+    font-size: calc(10px + 14 * ((100vw - 320px) / 1120));
   }
 
   .card-progress__title {
-    line-height: calc(14px + 19 * ((100vw - 320px) / 1046));
+    line-height: calc(14px + 19 * ((100vw - 320px) / 1120));
   }
 
   .card-progress__subtitle {
-    margin-top: calc(15px + 15 * ((100vw - 320px) / 1046));
+    margin-top: calc(15px + 15 * ((100vw - 320px) / 1120));
   }
 
   .card-progress__subtitle {
-    font-size: calc(8px + 8 * ((100vw - 320px) / 1046));
+    font-size: calc(8px + 8 * ((100vw - 320px) / 1120));
   }
 
   .card-progress__subtitle {
-    line-height: calc(11px + 11 * ((100vw - 320px) / 1046));
+    line-height: calc(11px + 11 * ((100vw - 320px) / 1120));
   }
 
   .card-progress__bar {
-    margin-top: calc(5px + 15 * ((100vw - 320px) / 1046));
+    margin-top: calc(5px + 15 * ((100vw - 320px) / 1120));
   }
 
   .progress__text {
-    font-size: calc(12px + 12 * ((100vw - 320px) / 1046));
+    font-size: calc(12px + 12 * ((100vw - 320px) / 1120));
   }
 
   .progress__text {
-    line-height: calc(16px + 17 * ((100vw - 320px) / 1046));
+    line-height: calc(16px + 17 * ((100vw - 320px) / 1120));
   }
 
   .progress__bar {
-    width: calc(220px + 201 * ((100vw - 320px) / 1046));
+    width: calc(220px + 201 * ((100vw - 320px) / 1120));
   }
 
   .progress__bar {
-    height: calc(50px + 30 * ((100vw - 320px) / 1046));
+    height: calc(50px + 30 * ((100vw - 320px) / 1120));
   }
 
   .progress__bar {
-    border-radius: calc(25px + 15 * ((100vw - 320px) / 1046));
+    border-radius: calc(25px + 15 * ((100vw - 320px) / 1120));
   }
 
   .table {
-    margin-top: calc(10px + 30 * ((100vw - 320px) / 1046));
+    margin-top: calc(10px + 30 * ((100vw - 320px) / 1120));
   }
 
   .table {
-    margin-bottom: calc(10px + 30 * ((100vw - 320px) / 1046));
+    margin-bottom: calc(10px + 30 * ((100vw - 320px) / 1120));
   }
 
   .ad {
-    margin-top: calc(10px + 10 * ((100vw - 320px) / 1046));
+    margin-top: calc(10px + 10 * ((100vw - 320px) / 1120));
   }
 
   .ad--2 {
-    padding: calc(10px + 30 * ((100vw - 320px) / 1046));
+    padding: calc(10px + 30 * ((100vw - 320px) / 1120));
   }
 
   .ad--2 {
-    margin-top: calc(10px + 30 * ((100vw - 320px) / 1046));
+    margin-top: calc(10px + 30 * ((100vw - 320px) / 1120));
   }
 
   .ad__text {
-    font-size: calc(7px + 8 * ((100vw - 320px) / 1046));
+    font-size: calc(7px + 8 * ((100vw - 320px) / 1120));
   }
 
   .ad__text {
-    line-height: calc(10px + 10 * ((100vw - 320px) / 1046));
+    line-height: calc(10px + 10 * ((100vw - 320px) / 1120));
   }
 
   .ad__text span {
-    font-size: calc(10px + 11 * ((100vw - 320px) / 1046));
+    font-size: calc(10px + 11 * ((100vw - 320px) / 1120));
   }
 
   .ad__text span {
-    line-height: calc(24px + 4 * ((100vw - 320px) / 1046));
+    line-height: calc(24px + 4 * ((100vw - 320px) / 1120));
   }
 
   .footer {
-    margin-top: calc(8px + 32 * ((100vw - 320px) / 1046));
+    margin-top: calc(8px + 32 * ((100vw - 320px) / 1120));
   }
 
   .footer {
-    margin-bottom: calc(5px + 20 * ((100vw - 320px) / 1046));
+    margin-bottom: calc(5px + 20 * ((100vw - 320px) / 1120));
   }
 }
 
