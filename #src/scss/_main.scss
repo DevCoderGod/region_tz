@@ -47,6 +47,11 @@ h1{
 		margin: 90px auto 0;
 		@include adapt-val("font-size",24,12,$maxWidth,1);
 		@include adapt-val("line-height",33,16,$maxWidth,1);
+		p{
+			text-align: center;
+			font-size: 24px;
+			line-height: 33px;
+		}
 	}
 
 	&__bar {
@@ -66,7 +71,7 @@ h1{
 		&:focus{
 			background-color: #7d3cff;
 		}
-	p{
+		p{
 			display: none;
 		}
 		&--full{
