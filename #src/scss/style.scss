@@ -15,7 +15,7 @@ $text: white;
 	--var1: any;
 }
 $minWidth:320;
-$maxWidth:1366;
+$maxWidth:1440;
 $WidthContainer:837;//1110+15+15
 // 
 $md1:1023px;//1024
@@ -49,7 +49,7 @@ body{
 //--<ОБОЛОЧКА----------------------------------------
 .wrapper{
 	width: 100%;
-	max-width: $maxWidth;
+	max-width: $maxWidth+px;
 	min-height: 100%;
 	overflow: hidden;
 	display: flex;
@@ -68,10 +68,8 @@ body{
 }
 //-</ОБОЛОЧКА----------------------------------------
 //---
-@import "_nav";
 @import "_header";
 @import "_main";
-
 @import "_footer";
 
 

@@ -12,8 +12,8 @@
 let project_folder = require("path").basename(__dirname)
 let source_folder = "#src"
 let fs = require("fs")
-let indexFile = "index_dev.html"
-//let indexFile = "index.html"
+// let indexFile = "index_dev.html"
+let indexFile = "index.html"
 
 //--------------------------------------------------
 //ПУТИ
@@ -198,8 +198,8 @@ function cb() {}
 //--------------------------------------------------
 function WatchFiles(params) {
 	gulp.watch([path.watch.html],HTML)
-//	gulp.watch([path.watch.css],CSS)
-	gulp.watch([path.watch.css],CSS_Dev)
+	gulp.watch([path.watch.css],CSS)
+	// gulp.watch([path.watch.css],CSS_Dev)
 	gulp.watch([path.watch.js],JS)
 	gulp.watch([path.watch.img],IMAGES)
 }
@@ -207,9 +207,13 @@ function WatchFiles(params) {
 //ТАСКИ
 //--------------------------------------------------
 //gulp.task('fonts',FontsStyle())//gulp fonts
-let dev=gulp.series(Clean,gulp.parallel(CSS_Dev,HTML,JS,IMAGES,FONTS),FontsStyle)
-let build=gulp.series(Clean,gulp.parallel(CSS_Dev,HTML,JS,IMAGES,FONTS),FontsStyle)
-//let build=gulp.series(Clean,gulp.parallel(CSS_Dev,HTML,JS,IMAGES,FONTS),FontsStyle)
+let dev=gulp.series(Clean,gulp.parallel(CSS,HTML,JS,IMAGES,FONTS),FontsStyle)
+let build=gulp.series(Clean,gulp.parallel(CSS,HTML,JS,IMAGES,FONTS),FontsStyle)
+
+// let dev=gulp.series(Clean,gulp.parallel(CSS_Dev,HTML,JS,IMAGES,FONTS),FontsStyle)
+// let build=gulp.series(Clean,gulp.parallel(CSS_Dev,HTML,JS,IMAGES,FONTS),FontsStyle)
+
+
 let watch=gulp.parallel(dev,WatchFiles,BrowserSync)
 let watch2=gulp.parallel(build,WatchFiles,BrowserSync)
 //--------------------------------------------------
