@@ -102,12 +102,10 @@ function formSubmit(e) {
 
 function showResult(respons){
 	document.querySelector('#form').classList.add('hidden')
-	document.querySelector('.advertisement2').classList.add('hidden')
 	let cards=document.querySelector('.prediction').querySelectorAll(".card")
 	putCards(cards,cardsData)
 	putText(document.querySelector('.prediction__text'),cardsData)
 	document.querySelector('.prediction').classList.remove('hidden')
-	document.querySelector('.advertisement3').classList.remove('hidden')
 }
 
 function authGoogle(e) {
