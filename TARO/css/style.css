@@ -153,6 +153,12 @@ body._lock {
   padding-right: 42px;
 }
 
+main {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
 .header {
   margin: 0 auto 6px;
 }
@@ -239,17 +245,22 @@ h1 {
 }
 
 .progress {
+  padding-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
 
 .progress__text {
-  margin: 90px auto 0;
+  margin: auto auto 0;
   font-size: 24px;
   line-height: 33px;
 }
@@ -482,11 +493,9 @@ h1 {
 }
 
 .form__input--submit {
-  height: 70px;
   margin-bottom: 14px;
   padding-left: 30px;
   padding-right: 30px;
-  border-radius: 35px;
   background-color: #9968fe;
   white-space: nowrap;
 }
@@ -622,8 +631,8 @@ h1 {
   font-size: 12px;
   line-height: 12px;
   color: #8571d2;
-  margin-top: 40px;
-  margin-bottom: 25px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .footer .links {
@@ -725,11 +734,11 @@ h1 {
   }
 
   .footer {
-    margin-top: calc(8px + 32 * ((100vw - 320px) / 1120));
+    margin-top: calc(5px + 15 * ((100vw - 320px) / 1120));
   }
 
   .footer {
-    margin-bottom: calc(5px + 20 * ((100vw - 320px) / 1120));
+    margin-bottom: calc(5px + 15 * ((100vw - 320px) / 1120));
   }
 }
 

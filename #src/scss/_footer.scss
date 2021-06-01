@@ -2,8 +2,8 @@
 	font-size: 12px;
 	line-height: 12px;
 	color: #8571d2;
-	@include adapt-val("margin-top",40,8,$maxWidth,1);
-	@include adapt-val("margin-bottom",25,5,$maxWidth,1);
+	@include adapt-val("margin-top",20,5,$maxWidth,1);
+	@include adapt-val("margin-bottom",20,5,$maxWidth,1);
 	.links{
 		display: flex;
 		justify-content: center;

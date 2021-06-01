@@ -41,10 +41,13 @@ h1{
 }
 
 .progress {
+	padding-top: 20px;
 	display: flex;
+	height: 100%;
 	flex-direction: column;
+	justify-content: end;
 	&__text {
-		margin: 90px auto 0;
+		margin: auto auto 0;
 		@include adapt-val("font-size",24,12,$maxWidth,1);
 		@include adapt-val("line-height",33,16,$maxWidth,1);
 		p{
@@ -197,11 +200,9 @@ h1{
 			}
 		}
 		&--submit{
-			height: 70px;
 			margin-bottom: 14px;
 			padding-left: 30px;
 			padding-right: 30px;
-			border-radius: 35px;
 			background-color: #9968fe;
 			white-space: nowrap;
 			&:focus{

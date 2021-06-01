@@ -54,6 +54,7 @@ body{
 	overflow: hidden;
 	display: flex;
 	flex-direction: column;
+	// justify-content: space-between;
 	margin: 0 auto;
 	background-image: url(../img/fon.svg);
 }
@@ -65,6 +66,10 @@ body{
 	//border: solid 1px #000;
 	// border-left: solid 1px #000;
 	// border-right: solid 1px #000;
+}
+
+main{
+	flex-grow: 1
 }
 //-</ОБОЛОЧКА----------------------------------------
 //---

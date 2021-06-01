@@ -34,7 +34,7 @@ function go() {
 	let start = new Promise(res=>setTimeout(() => res(), 2000))
 	start
 	.then(()=>{
-		table.innerHTML=''
+		table.style.display='none'
 		progress.classList.remove('hidden')
 		return progress
 	})
