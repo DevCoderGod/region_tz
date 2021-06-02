@@ -68,7 +68,8 @@ function BrowserSync() {
 					baseDir:"./"+project_folder+"/"
 				},
 				index: "index_dev.html",
-				browser: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe',
+				// browser: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe',
+				browser: '/snap/bin/chromium',
 				port:3000,
 				notify:true
 			})
@@ -79,7 +80,8 @@ function BrowserSync() {
 					baseDir:"./"+project_folder+"/"
 				},
 				index: "index.html",
-				browser: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe',
+				// browser: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe',
+				browser: '/snap/bin/chromium',
 				port:3000,
 				notify:true
 			})
