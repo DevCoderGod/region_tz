@@ -77,7 +77,10 @@ function formSubmit(e) {
 
 	async function sendData(){
 		let formData= new FormData(form)
-		let res=await fetch('/',{method: 'POST', body: formData})
+		let res=await fetch('/',{
+			method: 'POST',
+			body: formData
+		})
 			.then(res=>res)
 			.catch(err=>err)
 	}
@@ -135,12 +138,18 @@ function putText(text,data) {
 
 async function getBackendData() { //return arr [{Card},{Card},{Card}]
 	let idsAll=[0,1,2,3,4,5,6]
-	let idsCards=getCardsId()
+	let idsCards=getCardsId(idsAll,3)
 
 	async function requestData(){
 		let reqData= JSON.stringify({"ids": idsCards})
 
-		let data=await fetch('/',{method: 'POST', body: reqData})
+		let data=await fetch('/',{
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json',
+			},
+			body: reqData
+		})
 			.then(resp=>resp.json())
 			.catch(()=> getCardsFromFakeBackend())
 		return data
@@ -229,13 +238,15 @@ async function getBackendData() { //return arr [{Card},{Card},{Card}]
 		return cards
 	}
 
-	function getCardsId(){//return [int,int,int]
-		let ids=[]
-		for (let i = 6; i > 3; i--) {
+	//return random [quantity]int from inArrNumbers[]
+	function getCardsId(inArrNumbers, quantity){
+		all=inArrNumbers.length-1
+		let outArrNumbers=[]
+		for (let i = all; i > (all-quantity); i--) {
 			let id=randomId(0,i)
-			ids.push(idsAll[id])
-			idsAll.splice(id,1)
+			outArrNumbers.push(inArrNumbers[id])
+			inArrNumbers.splice(id,1)
 		}
-		return ids
+		return outArrNumbers
 	}
 }
